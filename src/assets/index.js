@@ -21,6 +21,7 @@ import typescript from "./tech/typescript.png";
 import cpp from "./tech/cpp-logo.png";
 import bootstrap from './tech/bootstrap-logo.svg';
 import styledComponents from './tech/styled components.png';
+import graphQl from './tech/GraphQl.png';
 
 import BGroup from "./company/B-Group-logo.png";
 import freelancing from "./company/freelancing.png";
@@ -56,6 +57,7 @@ export {
   cpp,
   bootstrap,
   styledComponents,
+  graphQl,
   BGroup,
   freelancing,
   evolveClothing,

@@ -24,7 +24,8 @@ import {
   cpp,
   bootstrap,
   styledComponents,
-  slotMachine
+  graphQl,
+  slotMachine,
 } from "../assets";
 
 export const navLinks = [
@@ -98,6 +99,12 @@ const technologies = [
     name: "Firebase",
     icon: firebase,
   },
+
+  {
+    name: "GraphQl",
+    icon: graphQl,
+  },
+
   {
     name: "cpp",
     icon: cpp,
@@ -128,7 +135,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "January 2020 - February 2022",
     points: [
-      "Front-end developer of the Smart Building Project in the company, building the user interface(UI), optimizing and maintaining the code, collaborating closely with backend developers and the whole project team",
+      "Front-end developer of the Smart Building Project in the company", "building the user interface(UI)", "Implementing best practices including migrating from JavaScript to TypeScript", "making sure that the code and overall application UI components are optimized", "collaborating closely with backend developers and the whole project team",
     ],
   },
   {
@@ -136,7 +143,7 @@ const experiences = [
     company_name: "Freelancer",
     icon: freelancing,
     iconBg: "#E6DEDD",
-    date: "Feb 2022 - April 2023",
+    date: "Feb 2022 - Present",
     points: [
       "I have developed web applications for different industries, such as digital agencies, real estate companies, restaurants, individuals, personal portfolios, and universities, using React.",
     ],

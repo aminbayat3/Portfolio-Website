@@ -48,7 +48,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a self-taught web developer, currently pursuing a Master's degree in Game Engineering in Austria. I'm Skilled in Javascript, React, Redux, TypeScript,
-        Nodejs, Postgres, Firebase, Gsap(animation), Figma, Git and GitHub, SASS, CSS, p5js, HTML5 Canvas and also C++.
+        Nodejs, Postgres, Firebase, Gsap(animation), Gatsby, GraphQl, Figma, Git and GitHub, Bootstrap, SASS, CSS, p5js, HTML5 Canvas and also C++.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
