@@ -8,12 +8,12 @@ import {
   html,
   css,
   reactjs,
+  angularjs,
   redux,
-  gsap,
+  RxJS,
   nodejs,
   firebase,
   git,
-  figma,
   BGroup,
   freelancing,
   evolveClothing,
@@ -23,7 +23,6 @@ import {
   memoGame,
   cpp,
   bootstrap,
-  styledComponents,
   graphQl,
   slotMachine,
 } from "../assets";
@@ -61,20 +60,12 @@ const services = [
     icon: backend,
   },
   {
-    title: "C++ Developer",
+    title: "Angular Developer",
     icon: creator,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -88,12 +79,16 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Angular JS",
+    icon: angularjs
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
-    name: "Gsap",
-    icon: gsap,
+    name: "RxJS",
+    icon: RxJS,
   },
   {
     name: "Node JS",
@@ -103,7 +98,6 @@ const technologies = [
     name: "Firebase",
     icon: firebase,
   },
-
   {
     name: "GraphQl",
     icon: graphQl,
@@ -118,16 +112,16 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "bootstrap",
     icon: bootstrap,
   },
   {
-    name: "styled-components",
-    icon: styledComponents
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   }
 ];
 
@@ -147,7 +141,7 @@ const experiences = [
     company_name: "Freelancer",
     icon: freelancing,
     iconBg: "#E6DEDD",
-    date: "Feb 2022 - Present",
+    date: "Feb 2022 - January 2023",
     points: [
       "I have developed web applications for different industries, such as digital agencies, real estate companies, restaurants, individuals, personal portfolios, and universities, using React.",
     ],

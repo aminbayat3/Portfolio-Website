@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -8,8 +8,9 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import video from "../assets/videos/project.mp4";
 import clarifaiProjectImage from "../assets/clarifai-website.jpg";
+
+import "./Works.styles.css";
 
 const ProjectCard = ({
   isVideo,
@@ -22,22 +23,13 @@ const ProjectCard = ({
   link,
   digital,
 }) => {
-  const [isPaused, setIsPaused] = useState(true);
-
-  const handlePause = () => {
-    setIsPaused(true);
-  };
-
-  const handlePlay = () => {
-    setIsPaused(false);
-  };
 
   const navigateToSourceCode = () => {
     window.location.href = source_code_link;
   };
 
   return (
-    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -49,19 +41,18 @@ const ProjectCard = ({
         <div id="projects" className="relative w-full h-[230px]">
           {isVideo ? (
             <>
-              {isPaused && (
-                <img
-                  style={{
-                    position: "absolute",
-                    borderRadius: "12px",
-                    height: "100%",
-                    width: "100%",
-                  }}
-                  src={clarifaiProjectImage}
-                  alt="clarifai"
-                />
-              )}
-              <video
+              <img
+                style={{
+                  position: "absolute",
+                  borderRadius: "12px",
+                  height: "100%",
+                  width: "100%",
+                }}
+                src={clarifaiProjectImage}
+                alt="clarifai"
+              />
+
+              {/* <video
                 style={{ width: "100%", height: "100%", borderRadius: "12px" }}
                 onPause={handlePause}
                 onPlay={handlePlay}
@@ -69,13 +60,15 @@ const ProjectCard = ({
                 controls
               >
                 <source src={video} type="video/mp4" />
-              </video>
+              </video> */}
             </>
           ) : (
             <img
               src={image}
               alt="project_image"
-              className={`w-full h-full rounded-2xl ${digital ? 'bg-cover bg-center' : 'object-cover'}`}
+              className={`w-full h-full rounded-2xl ${
+                digital ? "bg-cover bg-center" : "object-cover"
+              }`}
             />
           )}
           {!isVideo && (
@@ -132,7 +125,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    // </motion.div>
+    </motion.div>
   );
 };
 
@@ -159,7 +152,9 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <a href={project.link}>
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          </a>
         ))}
       </div>
     </>

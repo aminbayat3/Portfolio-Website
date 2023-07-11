@@ -8,21 +8,19 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import firebase from "./tech/firebase.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import angularjs from "./tech/angularjs.png";
 import redux from "./tech/redux.png";
-import gsap from "./tech/gsap-greensock.png";
+import RxJS from './tech/RxJs.png';
 import typescript from "./tech/typescript.png";
 import cpp from "./tech/cpp-logo.png";
 import bootstrap from './tech/bootstrap-logo.svg';
-import styledComponents from './tech/styled components.png';
 import graphQl from './tech/GraphQl.png';
-
 import BGroup from "./company/B-Group-logo.png";
 import freelancing from "./company/freelancing.png";
 
@@ -44,19 +42,18 @@ export {
   menu,
   close,
   css,
-  figma,
   git,
   html,
   javascript,
   firebase,
   nodejs,
   reactjs,
+  angularjs,
   redux,
-  gsap,
+  RxJS,
   typescript,
   cpp,
   bootstrap,
-  styledComponents,
   graphQl,
   BGroup,
   freelancing,
