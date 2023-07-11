@@ -10,7 +10,7 @@ import {
   reactjs,
   angularjs,
   redux,
-  RxJS,
+  rxjs,
   nodejs,
   firebase,
   git,
@@ -88,7 +88,7 @@ const technologies = [
   },
   {
     name: "RxJS",
-    icon: RxJS,
+    icon: rxjs,
   },
   {
     name: "Node JS",

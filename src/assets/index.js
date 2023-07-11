@@ -16,7 +16,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import angularjs from "./tech/angularjs.png";
 import redux from "./tech/redux.png";
-import RxJS from './tech/RxJs.png';
+import rxjs from './tech/rxjs-logo.png';
 import typescript from "./tech/typescript.png";
 import cpp from "./tech/cpp-logo.png";
 import bootstrap from './tech/bootstrap-logo.svg';
@@ -50,7 +50,7 @@ export {
   reactjs,
   angularjs,
   redux,
-  RxJS,
+  rxjs,
   typescript,
   cpp,
   bootstrap,
